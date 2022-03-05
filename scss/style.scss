@@ -1,0 +1,62 @@
+$mainGreen: #01996D;
+
+@mixin hoverTransition($color) {
+    transition: color  .2s ease-in-out;
+    &:hover {
+        color: $color;
+    }
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #424242;
+}
+
+.none {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-size: 0;
+}
+
+.container {
+    width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@import './_header';
+
+@import './main';
+
+.btn, a.btn {
+    display: inline-block;
+    color: white;
+    padding: 0 50px;
+    background-color: $mainGreen;
+    height: 51px;
+    line-height: 51px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 4px;
+    @include hoverTransition(white);
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-large, a.btn-large {
+    min-height: 65px;
+    line-height: 65px;
+}

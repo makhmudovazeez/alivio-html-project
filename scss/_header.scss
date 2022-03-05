@@ -1,0 +1,42 @@
+.header {
+    padding: 17px 0;
+    border-bottom: 1px solid #D6D6D6;
+    
+    .row {
+        display: flex;
+        align-items: center;
+
+        .nav {
+            margin-left: 172px;
+            font-weight: 500;
+            color: #292929;
+            ul {
+                display: flex;
+                li {
+                    margin: 0 35px;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    a {
+                        @include hoverTransition($mainGreen);
+                    }
+                }
+            }
+        }
+
+        .login {
+            margin-left: auto;
+            * + * {
+                margin-left: 35px;
+            }
+            .sign-in {
+                @include hoverTransition($mainGreen);
+                color: black;
+            }
+        }
+    }
+}
