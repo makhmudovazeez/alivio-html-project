@@ -165,4 +165,97 @@ main .home .bg-image img {
   min-height: 65px;
   line-height: 65px;
 }
+
+.hiw {
+  padding-top: 169px;
+  padding-bottom: 51px;
+}
+
+.hiw .hiw-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hiw .hiw-header .hiw-header-head {
+  margin-right: 30px;
+  max-width: 584px;
+}
+
+.hiw .hiw-header .hiw-header-head .hiw-header-title {
+  margin-bottom: -3px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 157%;
+}
+
+.hiw .hiw-header .hiw-header-head .hiw-header-subtitle {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 157%;
+  font-family: "Georgia", serif;
+  color: #01996D;
+}
+
+.hiw .hiw-header .hiw-header-content {
+  padding-top: 58px;
+  max-width: 671px;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.hiw .hiw-steps {
+  margin-top: 52px;
+}
+
+.hiw .hiw-steps .step {
+  max-width: 390px;
+}
+
+.hiw .hiw-steps .step .step-heading {
+  padding: 135px 0 0 88px;
+  position: relative;
+  margin-bottom: 55px;
+  font-family: "Georgia", serif;
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.hiw .hiw-steps .step .step-heading::before {
+  content: attr(data-number);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 150%;
+  color: rgba(1, 153, 109, 0.2);
+}
+
+.hiw .hiw-steps .step .step-text {
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 60px;
+}
+
+.hiw .hiw-steps .step .step-img-wrapper {
+  padding-bottom: 126%;
+  position: relative;
+}
+
+.hiw .hiw-steps .step .step-img-wrapper .step-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
 /*# sourceMappingURL=style.css.map */
